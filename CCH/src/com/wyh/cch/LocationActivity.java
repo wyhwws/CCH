@@ -26,6 +26,7 @@ public class LocationActivity extends Activity{
     private Button savepoi;
     private RadioGroup selectMode,selectCoordinates;
     private EditText frequence;
+    private EditText et_latitude;
     private LocationMode tempMode = LocationMode.Hight_Accuracy;
     private String tempcoor="gcj02";
     private CheckBox checkGeoLocation;
@@ -42,6 +43,7 @@ public class LocationActivity extends Activity{
         ModeInfor.setText(getString(R.string.hight_accuracy_desc));
         ((LocationApplication)getApplication()).mLocationResult = LocationResult;
         frequence = (EditText)findViewById(R.id.frequence);
+        et_latitude = (EditText) findViewById(R.id.et_latitude);
         checkGeoLocation = (CheckBox)findViewById(R.id.geolocation);
         startLocation = (Button)findViewById(R.id.addfence);
         savepoi = (Button) findViewById(R.id.addpoi);
